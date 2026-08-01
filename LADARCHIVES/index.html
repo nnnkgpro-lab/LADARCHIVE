@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LAD Archive</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Загрузка -->
+
+<div id="loading">
+
+<h1>LAD</h1>
+
+<h2>Learn Anomaly and Destroy</h2>
+
+<p id="loadingText">
+INITIALIZING DATABASE...
+</p>
+
+<div class="loader"></div>
+
+</div>
+
+
+
+
+
+<!-- Главный экран -->
+
+<div id="main" style="display:none;">
+
+
+<header>
+
+<h1>LAD ARCHIVE</h1>
+
+<p>
+Learn Anomaly and Destroy
+</p>
+
+</header>
+
+
+
+
+
+<!-- Верхняя панель -->
+
+<div class="topbar">
+
+<input
+id="search"
+type="text"
+placeholder="Поиск LAD..."
+>
+
+<select id="level">
+
+<option value="1">Уровень 1</option>
+<option value="2">Уровень 2</option>
+<option value="3">Уровень 3</option>
+<option value="4">Уровень 4</option>
+<option value="5">Уровень 5</option>
+<option value="6">Уровень 6</option>
+<option value="7">Уровень 7</option>
+<option value="8">Уровень 8</option>
+<option value="9">Уровень 9</option>
+<option value="10">Уровень 10</option>
+<option value="11">Создатель LAD</option>
+
+</select>
+
+<button id="musicButton">
+🔊 Музыка
+</button>
+
+</div>
+
+
+
+
+
+<!-- Статистика -->
+
+<div class="stats">
+
+<div class="stat">
+
+<h3>20</h3>
+
+<p>Объектов</p>
+
+</div>
+
+<div class="stat">
+
+<h3>8</h3>
+
+<p>На содержании</p>
+
+</div>
+
+<div class="stat">
+
+<h3>9</h3>
+
+<p>Изучаются</p>
+
+</div>
+
+<div class="stat">
+
+<h3>1</h3>
+
+<p>Ликвидирован</p>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Карточки -->
+
+<div id="archive"></div>
+
+
+
+
+
+<!-- Документ -->
+
+<div id="document" style="display:none;">
+
+<div class="documentHeader">
+
+<h1>CLASSIFIED DOCUMENT</h1>
+
+<button onclick="back()">
+
+← Назад
+
+</button>
+
+</div>
+
+<div id="docContent"></div>
+
+</div>
+
+
+
+
+
+<!-- Футер -->
+
+<footer>
+
+<p>
+
+ORGANIZATION:
+Learn Anomaly and Destroy
+
+</p>
+
+<p>
+
+Версия архива:
+3.0
+
+</p>
+
+</footer>
+
+</div>
+
+
+
+
+
+<!-- Звуки -->
+
+<script>
+
+const ambient = new Audio("sounds/ambient.wav");
+ambient.loop = true;
+ambient.volume = 0.25;
+
+const click = new Audio("sounds/click.wav");
+
+const alarm = new Audio("sounds/alarm.mp3");
+
+const glitch = new Audio("sounds/glitch.wav");
+
+const typing = new Audio("sounds/typing.wav");
+
+</script>
+
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
